@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Return Book</title>
+	<style>
+		/* style.css */
+
+/* General Reset */
+body, h1, h2, p, ul, li, form, input, label, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* Main Section */
+main {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 2rem auto;
+    max-width: 60%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+	</style>
+</head>
+<body>
+	<!-- Header Section -->
+	<header>
+		<h1>Library Management System</h1>
+		<nav>
+			<ul>
+				<li><a href="/html/library">Home</a></li>
+				<li><a href="/library management/books.html">Books</a></li>
+				<li><a href="/library management/members.html">Members</a></li>
+				<li><a href="/library management/borrow.html">Borrow</a></li>
+				<li><a href="/library management/return.html">Return</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- Main Content Section -->
+	<main>
+		<h2>Return Book</h2>
+		<form id="return-form">
+			<label for="book-title">Book Title:</label>
+			<input type="text" id="book-title" required>
+			<label for="member-id">Member ID:</label>
+			<input type="number" id="member-id" required>
+			<label for="return-date">Return Date:</label>
+			<input type="date" id="return-date" required>
+			<button id="return-btn">Return</button>
+		</form>
+	</main>
+	
+	<!-- Footer Section -->
+	<footer>
+		<p>&copy; 2023 Library Management System</p>
+	</footer>
+	
+	<script src="script.js"></script>
+</body>
+</html>
